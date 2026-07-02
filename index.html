@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{APP_NAME}} – Rechtliche Informationen</title>
+  <meta name="description" content="Rechtliche Informationen, Datenschutzerklärung und Impressum für {{APP_NAME}}.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header" aria-label="Kopfbereich">
+    <a class="brand" href="./" aria-label="{{APP_NAME}} Startseite">
+      <span class="logo" aria-hidden="true">🐾</span>
+      <span>{{APP_NAME}}</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="de/datenschutz/">Datenschutz</a>
+      <a href="de/impressum/">Impressum</a>
+      <a href="en/privacy/">Privacy</a>
+      <a href="en/legal-notice/">Legal Notice</a>
+    </nav>
+  </header>
+
+  <main id="main" class="hero">
+    <section class="hero-card">
+      <p class="eyebrow">Tier-App für Kinder</p>
+      <h1>Rechtliche Informationen zu {{APP_NAME}}</h1>
+      <p class="lead">
+        Hier findest du die Datenschutzerklärung und das Impressum zur App {{APP_NAME}}.
+        Die App zeigt Kindern Tiere, Bilder und Tiergeräusche in einer kindgerechten Umgebung.
+      </p>
+      <div class="actions" aria-label="Rechtliche Seiten">
+        <a class="button" href="de/datenschutz/">Datenschutzerklärung</a>
+        <a class="button secondary" href="de/impressum/">Impressum</a>
+      </div>
+      <div class="lang" aria-label="Sprachauswahl">
+        <a href="de/datenschutz/">Deutsch</a>
+        <a href="en/privacy/">English</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Hinweise">
+      <article class="card">
+        <h2>Für Eltern</h2>
+        <p>
+          {{APP_NAME}} ist als einfache Tier-App für Kinder geplant. Diese Website enthält die rechtlichen Informationen für Eltern und Erziehungsberechtigte.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Kontakt</h2>
+        <p>
+          Fragen zur App oder zum Datenschutz kannst du an <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> senden.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <span>© <span id="year">2026</span> {{OWNER_NAME}}</span>
+      <span><a href="de/datenschutz/">Datenschutz</a> · <a href="de/impressum/">Impressum</a></span>
+    </div>
+  </footer>
+</body>
+</html>
