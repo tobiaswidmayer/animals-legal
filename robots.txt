@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://animal-sounds.de/sitemap.xml

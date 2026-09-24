@@ -1,83 +1,28 @@
-# Legal Website für eine Kinder-Tier-App
+# animal-sounds.de
 
-Statische Mini-Website für GitHub Pages mit:
-
-- Startseite
-- Deutsche Datenschutzerklärung
-- Deutsches Impressum
-- Englische Privacy Policy
-- Englisches Legal Notice
-
-## Wichtig
-
-Die enthaltenen Rechtstexte sind vorbereitete Platzhalter und keine Rechtsberatung. Ersetze alle Platzhalter und prüfe die finalen Texte mit einem passenden Generator oder juristischer Beratung.
+Statische Website für die App „Tiergeräusche für Kinder“, gehostet über GitHub Pages unter https://animal-sounds.de.
 
 ## Struktur
 
 ```text
 /
-├── index.html
+├── index.html          Landingpage (CSS inline, kein JavaScript, keine externen Ressourcen)
+├── privacy.html        Datenschutzerklärung (#de / #en)
+├── imprint.html        Impressum / Legal Notice (#de / #en)
+├── 404.html            Fehlerseite
+├── preview.jpg         Social-Media-Vorschau (1200 × 630)
 ├── robots.txt
-├── .nojekyll
-├── CNAME.example
-├── assets/
-│   └── style.css
-├── de/
-│   ├── datenschutz/index.html
-│   └── impressum/index.html
-└── en/
-    ├── privacy/index.html
-    └── legal-notice/index.html
+├── sitemap.xml
+├── CNAME               Custom Domain für GitHub Pages
+└── assets/
+    ├── img/            Von der Website genutzte, optimierte Bilder
+    └── images/         Originalgrafiken, nur lokal (in .gitignore)
 ```
 
-## Platzhalter ersetzen
+`privacy.html` und `imprint.html` nicht umbenennen, falls diese URLs in der Google Play Console oder in der App verlinkt sind.
 
-Suche in allen Dateien nach `{{` und ersetze mindestens:
+Texte und Hinweise zur Landingpage stehen in `LANDINGPAGE-TEXTE.md`.
 
-```text
-{{APP_NAME}}
-{{OWNER_NAME}}
-{{STREET_AND_NUMBER}}
-{{POSTAL_CODE_AND_CITY}}
-{{CONTACT_EMAIL}}
-{{PHONE_NUMBER}}
-{{VAT_ID_OR_NOT_APPLICABLE}}
-{{DISPUTE_RESOLUTION_TEXT}}
-{{THIRD_PARTY_SERVICES}}
-```
+## Veröffentlichen
 
-## GitHub Pages veröffentlichen
-
-1. Neues GitHub-Repository erstellen, z. B. `tierapp-legal`.
-2. Alle Dateien aus diesem Ordner ins Repository hochladen.
-3. In GitHub: `Settings` → `Pages` öffnen.
-4. Als Source `Deploy from a branch` wählen.
-5. Branch `main` und Ordner `/root` auswählen.
-6. Speichern.
-7. Nach kurzer Zeit ist die Seite unter folgender Struktur erreichbar:
-
-```text
-https://DEIN-GITHUB-NAME.github.io/tierapp-legal/
-https://DEIN-GITHUB-NAME.github.io/tierapp-legal/de/datenschutz/
-https://DEIN-GITHUB-NAME.github.io/tierapp-legal/de/impressum/
-https://DEIN-GITHUB-NAME.github.io/tierapp-legal/en/privacy/
-https://DEIN-GITHUB-NAME.github.io/tierapp-legal/en/legal-notice/
-```
-
-## Später eigene Domain verbinden
-
-Wenn später eine Domain gekauft wird:
-
-1. In GitHub unter `Settings` → `Pages` die Custom Domain eintragen.
-2. Beim Domainanbieter die DNS-Einträge auf GitHub Pages setzen.
-3. GitHub erzeugt oder nutzt eine Datei `CNAME`.
-4. Danach können die URLs z. B. so aussehen:
-
-```text
-https://deine-domain.de/de/datenschutz/
-https://deine-domain.de/de/impressum/
-https://deine-domain.de/en/privacy/
-https://deine-domain.de/en/legal-notice/
-```
-
-Die internen Links sind bewusst relativ aufgebaut, damit die Website sowohl mit GitHub-Subdomain als auch später mit eigener Domain funktioniert.
+Änderungen auf `main` pushen. GitHub Pages (Settings → Pages → Deploy from a branch, `main`, `/root`) veröffentlicht automatisch.
